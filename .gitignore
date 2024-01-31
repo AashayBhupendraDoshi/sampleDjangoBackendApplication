@@ -1,0 +1,16 @@
+# local environment
+db.sqlite3
+.direnv
+.envrc
+.env
+.venv
+env
+venv
+
+# python caches
+**/__pycache__/
+**/*.pyc
+.pytest_cache
+
+# OS cruft
+.DS_Store
