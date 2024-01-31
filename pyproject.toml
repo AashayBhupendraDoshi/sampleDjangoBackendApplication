@@ -1,0 +1,52 @@
+[tool.poetry]
+name = "updraft-drf-assignment"
+version = "1"
+description = ""
+authors = ["Fairscore Ltd"]
+license = "proprietary"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+Django = "^4.0.4"
+djangorestframework = "^3.13.1"
+django-filter = "^23.5"
+pytest-django = "^4.8.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.1.2"
+pytest-django = "^4.5.2"
+black = "^22.3.0"
+isort = "^5.10.1"
+flake8 = "^4.0.1"
+freezegun = "^1.2.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 88
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.git
+  | \.mypy_cache
+  | \.venv
+  | venv
+)/
+'''
+# because pre-commit explicitly passes the migration files list to black (and
+# because we don't want to repeat our exclude pattern both here and in
+# .pre-commit-config.yaml), we have to use black's force-exclude option to
+# really, really exclude those files.
+force-exclude = '''
+/(
+  migrations
+)/
+'''
+
+[tool.isort]
+profile = "black"
+skip_gitignore = true
+skip_glob = '*/migrations/*'
+line_length = 88

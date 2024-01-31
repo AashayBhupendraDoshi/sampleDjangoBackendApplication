@@ -1,0 +1,4689 @@
+[
+  {
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+      "password": "pbkdf2_sha256$320000$YxSg5RvtMt402fxSQJoDlI$Zowg5WUwzGt8dKS20sFj5eS2foFTSvUwQiNe0t1ydo0=",
+      "last_login": "2022-06-28T09:39:22.646Z",
+      "is_superuser": true,
+      "username": "test-admin",
+      "first_name": "",
+      "last_name": "",
+      "email": "",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2022-06-28T09:39:15.339Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 2,
+    "fields": {
+      "password": "pbkdf2_sha256$320000$5ZAwnSo7PfjMEidaIq9UpU$9iTb7LrNEIm49fRvvF7WwOCPweRShlgXUIHLsBNwjqo=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "user1",
+      "first_name": "",
+      "last_name": "",
+      "email": "",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2022-06-28T09:40:08.635Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 3,
+    "fields": {
+      "password": "pbkdf2_sha256$320000$pA4lNa1AeLSwLQ2HpPiR62$bc83fQ3RVTGBuWRWvodG0y9fG/SsQ+HGtfhVZKFt8J0=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "user2",
+      "first_name": "",
+      "last_name": "",
+      "email": "",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2022-06-28T09:40:17.233Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "accounts.account",
+    "pk": 1,
+    "fields": {
+      "user": 2,
+      "name": "John Smith"
+    }
+  },
+  {
+    "model": "accounts.account",
+    "pk": 2,
+    "fields": {
+      "user": 2,
+      "name": "John J Smith"
+    }
+  },
+  {
+    "model": "accounts.account",
+    "pk": 3,
+    "fields": {
+      "user": 3,
+      "name": "Jane Doe"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 1,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-06-12T17:36:58.632000+00:00",
+      "amount": -25.26,
+      "description": "Tesco",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 2,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-06-12T12:31:36.629000+00:00",
+      "amount": -29.25,
+      "description": "Brunch Spot",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 3,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-06-11T18:05:07.416000+00:00",
+      "amount": -191.09,
+      "description": "easyJet",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 4,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-06-11T17:02:17.479000+00:00",
+      "amount": -6.24,
+      "description": "GAIL's Bakery",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 5,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-06-11T16:44:52.067000+00:00",
+      "amount": -30.98,
+      "description": "Sainsburys",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 6,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-06-11T16:03:12.826000+00:00",
+      "amount": -15.48,
+      "description": "Bar",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 7,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-06-11T10:54:22.263000+00:00",
+      "amount": 2.62,
+      "description": "Superpedestrian",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 8,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-06-11T10:49:12.199000+00:00",
+      "amount": -4.3,
+      "description": "Superpedestrian",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 9,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-06-11T00:16:07.799000+00:00",
+      "amount": -863.43,
+      "description": "pispXXXXXXXXX",
+      "transaction_category": "TRANSFER"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 10,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-06-10T13:06:30.312000+00:00",
+      "amount": -2.49,
+      "description": "Pret",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 11,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-06-09T23:56:13.541000+00:00",
+      "amount": -57.8,
+      "description": "Caff\u00e8 Nero",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 12,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-06-09T18:53:09.321000+00:00",
+      "amount": -2.84,
+      "description": "Uber",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 13,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-06-09T18:21:13.259000+00:00",
+      "amount": 2.62,
+      "description": "Superpedestrian",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 14,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-06-09T18:16:48.460000+00:00",
+      "amount": -4.3,
+      "description": "Superpedestrian",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 15,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-06-09T14:21:04.404000+00:00",
+      "amount": -6.57,
+      "description": "Local Coffee Spot",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 16,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-06-09T11:37:17.292000+00:00",
+      "amount": -16.42,
+      "description": "Brunch Spot",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 17,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-06-09T11:03:24.004000+00:00",
+      "amount": 2400.0,
+      "description": "Payroll",
+      "transaction_category": "TRANSFER"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 18,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-06-08T19:09:20.346000+00:00",
+      "amount": -20.63,
+      "description": "Uber Eats",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 19,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-06-08T09:08:08.440000+00:00",
+      "amount": 99.0,
+      "description": "Boat Tours Inc.",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 20,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-06-07T20:57:09.337000+00:00",
+      "amount": -14.77,
+      "description": "Uber Eats",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 21,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-06-07T17:25:27.183000+00:00",
+      "amount": -40.37,
+      "description": "Tesco",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 22,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-06-07T12:23:20.404000+00:00",
+      "amount": -8.44,
+      "description": "Local Coffee Spot",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 23,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-06-07T12:02:17.232000+00:00",
+      "amount": -19.72,
+      "description": "Park Cafe",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 24,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-06-06T15:19:49.039000+00:00",
+      "amount": -9.3,
+      "description": "Coffee Lounge",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 25,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-06-06T14:42:34.300000+00:00",
+      "amount": -13.5,
+      "description": "Coffee Lounge",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 26,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-06-06T12:10:55.846000+00:00",
+      "amount": -12.65,
+      "description": "Coffee Lounge",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 27,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-06-06T12:03:27.677000+00:00",
+      "amount": -5.0,
+      "description": "Uber",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 28,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-06-06T10:31:42.242000+00:00",
+      "amount": -96.29,
+      "description": "Uber",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 29,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-06-06T01:44:53.178000+00:00",
+      "amount": -7.7,
+      "description": "Transport for London",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 30,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-06-05T14:04:33.094000+00:00",
+      "amount": -32.0,
+      "description": "Pierre Marcolini Uk Lt",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 31,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-06-05T13:19:05.026000+00:00",
+      "amount": -2.0,
+      "description": "Regent's Park",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 32,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-06-05T12:59:50.909000+00:00",
+      "amount": -7.5,
+      "description": "Regent's Park",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 33,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-06-05T11:42:59.656000+00:00",
+      "amount": -1.65,
+      "description": "Transport for London",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 34,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-06-04T20:20:32.258000+00:00",
+      "amount": -20.11,
+      "description": "Deliveroo",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 35,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-06-04T20:03:59.227000+00:00",
+      "amount": 1.5,
+      "description": "Uber",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 36,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-06-04T19:46:23.961000+00:00",
+      "amount": -11.09,
+      "description": "Uber",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 37,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-06-04T19:22:48.715000+00:00",
+      "amount": -48.4,
+      "description": "The Cocktail Trading C",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 38,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-06-04T17:32:41.863000+00:00",
+      "amount": -6.3,
+      "description": "Boxpark Shoreditch",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 39,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-06-04T17:31:54.681000+00:00",
+      "amount": -10.5,
+      "description": "Rudies Jerk Shack",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 40,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-06-04T15:09:53.824000+00:00",
+      "amount": -3.3,
+      "description": "Transport for London",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 41,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-06-04T11:59:44.565000+00:00",
+      "amount": -6.7,
+      "description": "KHP Social",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 42,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-06-03T19:04:27.919000+00:00",
+      "amount": -7.48,
+      "description": "Uber",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 43,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-06-03T19:00:52.314000+00:00",
+      "amount": -86.0,
+      "description": "Swift Shoreditch",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 44,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-06-03T13:29:57.741000+00:00",
+      "amount": -9.25,
+      "description": "Pret",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 45,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-06-03T13:20:43.924000+00:00",
+      "amount": -3.1,
+      "description": "The Spence Bakery",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 46,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-06-02T17:26:09.853000+00:00",
+      "amount": -12.91,
+      "description": "Brewdog Shoreditch",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 47,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-06-02T15:35:11.043000+00:00",
+      "amount": -44.98,
+      "description": "Waterstones",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 48,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-06-02T13:22:35.782000+00:00",
+      "amount": -8.5,
+      "description": "easyJet",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 49,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-06-02T13:16:03.355000+00:00",
+      "amount": -68.51,
+      "description": "Dishoom Carnaby",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 50,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-06-02T12:00:18.399000+00:00",
+      "amount": -3.85,
+      "description": "Caff\u00e8 Nero",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 51,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-06-02T11:04:08.840000+00:00",
+      "amount": -7.7,
+      "description": "Transport for London",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 52,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-06-02T01:27:44.837000+00:00",
+      "amount": -113.96,
+      "description": "Uber",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 53,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-06-02T00:02:39.404000+00:00",
+      "amount": 107.65,
+      "description": "Pending",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 54,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-06-01T19:35:59.365000+00:00",
+      "amount": -3.41,
+      "description": "Soho Coffee",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 55,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-06-01T18:30:11.497000+00:00",
+      "amount": -10.55,
+      "description": "Soho Coffee",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 56,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-06-01T17:57:51.042000+00:00",
+      "amount": -15.18,
+      "description": "Soho Coffee",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 57,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-06-01T13:06:40.848000+00:00",
+      "amount": 2.61,
+      "description": "Superpedestrian",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 58,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-06-01T13:01:30.581000+00:00",
+      "amount": -4.27,
+      "description": "Superpedestrian",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 59,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-06-01T13:00:35.783000+00:00",
+      "amount": -5.76,
+      "description": "Caff\u00e8 Nero",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 60,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-06-01T12:59:00.853000+00:00",
+      "amount": 2.62,
+      "description": "Superpedestrian",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 61,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-06-01T12:54:12.137000+00:00",
+      "amount": -4.3,
+      "description": "Superpedestrian",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 62,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-06-01T12:09:12.717000+00:00",
+      "amount": -26.29,
+      "description": "Brunch Spot",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 63,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-05-31T20:03:46.444000+00:00",
+      "amount": -23.79,
+      "description": "Uber Eats",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 64,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-05-31T12:01:08.315000+00:00",
+      "amount": 2.15,
+      "description": "Superpedestrian",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 65,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-05-31T11:53:21.905000+00:00",
+      "amount": -4.33,
+      "description": "Superpedestrian",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 66,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-05-31T11:52:07.678000+00:00",
+      "amount": -3.47,
+      "description": "Sainsburys",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 67,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-05-31T11:49:39.166000+00:00",
+      "amount": 2.8,
+      "description": "Superpedestrian",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 68,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-05-31T11:45:34.309000+00:00",
+      "amount": -4.33,
+      "description": "Superpedestrian",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 69,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-05-31T08:33:35.919000+00:00",
+      "amount": -6.3,
+      "description": "GAIL's Bakery",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 70,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-05-31T00:01:50.719000+00:00",
+      "amount": -1000.0,
+      "description": "pispXXXXXXXXX",
+      "transaction_category": "TRANSFER"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 71,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-05-30T17:25:27.970000+00:00",
+      "amount": -9.43,
+      "description": "Tesco",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 72,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-05-30T13:20:29.098000+00:00",
+      "amount": -8.94,
+      "description": "Caff\u00e8 Nero",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 73,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-05-28T21:21:48.415000+00:00",
+      "amount": 1.79,
+      "description": "Superpedestrian",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 74,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-05-28T21:11:59.917000+00:00",
+      "amount": -4.26,
+      "description": "Superpedestrian",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 75,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-05-28T20:36:27.640000+00:00",
+      "amount": 8.15,
+      "description": "Uber",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 76,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-05-28T19:35:29.039000+00:00",
+      "amount": -11.79,
+      "description": "Pret",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 77,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-05-28T13:46:43.169000+00:00",
+      "amount": -10.25,
+      "description": "Local Coffee Spot",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 78,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-05-28T13:42:51.324000+00:00",
+      "amount": -8.34,
+      "description": "Tesco",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 79,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-05-28T11:57:37.982000+00:00",
+      "amount": -4.72,
+      "description": "Uber",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 80,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-05-27T19:47:01.725000+00:00",
+      "amount": -20.4,
+      "description": "Uber Eats",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 81,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-05-26T17:32:02.962000+00:00",
+      "amount": -3.2,
+      "description": "GitHub",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 82,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-05-25T16:53:38.954000+00:00",
+      "amount": -14.89,
+      "description": "Uber Eats",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 83,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-05-25T16:41:32.982000+00:00",
+      "amount": -2.36,
+      "description": "Brunch Spot",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 84,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-05-25T14:08:32.181000+00:00",
+      "amount": -60.7,
+      "description": "Mood Publishing Aps",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 85,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-05-24T20:22:03.514000+00:00",
+      "amount": -116.81,
+      "description": "Sainsburys",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 86,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-05-24T19:34:21.058000+00:00",
+      "amount": -5.56,
+      "description": "GAIL's Bakery",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 87,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-05-24T11:49:36.239000+00:00",
+      "amount": -12.11,
+      "description": "Brunch Spot",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 88,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-05-23T21:26:38.808000+00:00",
+      "amount": -18.61,
+      "description": "Uber Eats",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 89,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-05-23T17:27:27.665000+00:00",
+      "amount": -10.26,
+      "description": "Low Price",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 90,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-05-23T17:21:23.550000+00:00",
+      "amount": -25.71,
+      "description": "Tesco",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 91,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-05-23T14:41:11.494000+00:00",
+      "amount": -13.32,
+      "description": "Brunch Spot",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 92,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-05-23T07:27:17.155000+00:00",
+      "amount": -13.93,
+      "description": "Brunch Spot",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 93,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-05-22T13:49:18.449000+00:00",
+      "amount": -6.78,
+      "description": "Local Coffee Spot",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 94,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-05-22T13:45:28.580000+00:00",
+      "amount": -21.22,
+      "description": "Tesco",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 95,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-05-22T02:11:56.942000+00:00",
+      "amount": -36.2,
+      "description": "Vodafone",
+      "transaction_category": "DEBIT"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 96,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-05-22T01:10:30.082000+00:00",
+      "amount": -23.22,
+      "description": "Destroy All Software",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 97,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-05-21T15:48:41.293000+00:00",
+      "amount": -2.49,
+      "description": "Apple",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 98,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-05-21T14:36:00.817000+00:00",
+      "amount": -19.47,
+      "description": "Uber Eats",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 99,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-05-20T13:47:56.928000+00:00",
+      "amount": -13.63,
+      "description": "Tesco",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 100,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-05-20T12:20:21.344000+00:00",
+      "amount": -2.4,
+      "description": "Pret",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 101,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-05-19T22:06:32.684000+00:00",
+      "amount": -17.8,
+      "description": "Pret",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 102,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-05-19T14:16:40.039000+00:00",
+      "amount": -11.97,
+      "description": "Brunch Spot",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 103,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-05-18T21:29:25.362000+00:00",
+      "amount": -5.86,
+      "description": "Gelato",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 104,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-05-18T21:00:53.694000+00:00",
+      "amount": -19.66,
+      "description": "Middle Eastern Restaurant",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 105,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-05-18T17:26:24.763000+00:00",
+      "amount": -16.46,
+      "description": "Tesco",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 106,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-05-18T14:09:14.389000+00:00",
+      "amount": -16.24,
+      "description": "Brunch Spot",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 107,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-05-17T21:11:57.185000+00:00",
+      "amount": -2.99,
+      "description": "Board Game Cafe",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 108,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-05-17T20:27:36.598000+00:00",
+      "amount": -2.99,
+      "description": "Board Game Cafe",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 109,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-05-17T19:29:09.497000+00:00",
+      "amount": -2.99,
+      "description": "Board Game Cafe",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 110,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-05-17T18:51:36.550000+00:00",
+      "amount": -2.99,
+      "description": "Board Game Cafe",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 111,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-05-17T18:19:32.831000+00:00",
+      "amount": -2.77,
+      "description": "Uber",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 112,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-05-17T15:56:50.896000+00:00",
+      "amount": -4.73,
+      "description": "Patreon",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 113,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-05-17T12:19:01.459000+00:00",
+      "amount": -6.06,
+      "description": "Local Coffee Spot",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 114,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-05-17T12:11:55.368000+00:00",
+      "amount": -23.69,
+      "description": "Brunch Spot",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 115,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-05-17T10:50:34.115000+00:00",
+      "amount": -4.78,
+      "description": "Digital Ocean",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 116,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-05-16T22:20:36.633000+00:00",
+      "amount": -47.3,
+      "description": "Qwertee.com",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 117,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-05-16T12:12:32.815000+00:00",
+      "amount": -21.11,
+      "description": "Brunch Spot",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 118,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-05-16T04:27:19.242000+00:00",
+      "amount": -71.36,
+      "description": "Kickstarter",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 119,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-05-15T18:31:35.232000+00:00",
+      "amount": -22.84,
+      "description": "Tesco",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 120,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-05-15T13:29:55.156000+00:00",
+      "amount": -19.19,
+      "description": "Brunch Spot",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 121,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-05-13T13:08:36.715000+00:00",
+      "amount": -25.59,
+      "description": "Brunch Spot",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 122,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-05-13T13:03:08.831000+00:00",
+      "amount": -112.86,
+      "description": "Boat Tours Inc.",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 123,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-05-13T11:04:34.808000+00:00",
+      "amount": -7.99,
+      "description": "YouTube Premium",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 124,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-05-13T07:13:52.419000+00:00",
+      "amount": -0.4,
+      "description": "Uber",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 125,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-05-12T21:52:31.699000+00:00",
+      "amount": -10.15,
+      "description": "Krispy Kreme",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 126,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-05-12T21:27:29.041000+00:00",
+      "amount": -57.57,
+      "description": "Tasty Fish Co.",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 127,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-05-12T20:13:42.931000+00:00",
+      "amount": -3.01,
+      "description": "Uber",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 128,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-05-12T15:28:22.090000+00:00",
+      "amount": -17.02,
+      "description": "Brunch Spot",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 129,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-05-11T20:34:02.455000+00:00",
+      "amount": -26.18,
+      "description": "Uber Eats",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 130,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-05-11T19:51:29.383000+00:00",
+      "amount": -128.8,
+      "description": "Kickstarter",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 131,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-05-11T15:00:53.963000+00:00",
+      "amount": -2.79,
+      "description": "Uber",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 132,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-05-11T12:26:21.483000+00:00",
+      "amount": -5.14,
+      "description": "Low Price Minimarket",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 133,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-05-11T12:05:34.125000+00:00",
+      "amount": -6.77,
+      "description": "Local Coffee Spot",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 134,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-05-11T11:59:00.496000+00:00",
+      "amount": -22.92,
+      "description": "Brunch Spot",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 135,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-05-10T19:58:16.250000+00:00",
+      "amount": -20.47,
+      "description": "Uber Eats",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 136,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-05-10T16:45:48.008000+00:00",
+      "amount": 2400.0,
+      "description": "Payroll",
+      "transaction_category": "TRANSFER"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 137,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-05-10T16:35:59.899000+00:00",
+      "amount": 25.0,
+      "description": "Gift",
+      "transaction_category": "TRANSFER"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 138,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-05-10T12:18:22.995000+00:00",
+      "amount": -3.86,
+      "description": "Brunch Spot",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 139,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-05-10T12:16:55.299000+00:00",
+      "amount": -30.23,
+      "description": "Brunch Spot",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 140,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-05-10T09:22:09.884000+00:00",
+      "amount": -22.27,
+      "description": "Tesco",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 141,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-05-10T09:01:27.143000+00:00",
+      "amount": -50.0,
+      "description": "Birthday Present",
+      "transaction_category": "TRANSFER"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 142,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-05-09T09:58:58.808000+00:00",
+      "amount": 3.04,
+      "description": "Uber Eats",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 143,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-05-08T12:11:11.759000+00:00",
+      "amount": -21.12,
+      "description": "Brunch Spot",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 144,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-05-07T22:10:28.052000+00:00",
+      "amount": -1.82,
+      "description": "Uber Eats",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 145,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-05-07T21:18:58.902000+00:00",
+      "amount": 1.81,
+      "description": "Uber Eats",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 146,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-05-07T20:01:59.674000+00:00",
+      "amount": -15.75,
+      "description": "Uber Eats",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 147,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-05-07T13:21:04.677000+00:00",
+      "amount": -38.63,
+      "description": "Tesco",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 148,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-05-07T13:02:28.579000+00:00",
+      "amount": -47.96,
+      "description": "Uber Eats",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 149,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-05-07T12:56:46.292000+00:00",
+      "amount": 46.63,
+      "description": "Uber Eats",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 150,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-05-07T00:05:07.798000+00:00",
+      "amount": -87.1,
+      "description": "Happy Hour",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 151,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-05-06T22:16:51.990000+00:00",
+      "amount": -0.85,
+      "description": "Uber",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 152,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-05-06T21:51:01.463000+00:00",
+      "amount": -5.34,
+      "description": "Uber",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 153,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-05-06T21:44:18.381000+00:00",
+      "amount": -26.34,
+      "description": "Caff\u00e8 Nero",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 154,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-05-06T13:50:06.737000+00:00",
+      "amount": -56.08,
+      "description": "Lebanese",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 155,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-05-05T23:21:58.285000+00:00",
+      "amount": -270.22,
+      "description": "Fine Dining",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 156,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-05-05T19:44:54.630000+00:00",
+      "amount": -4.13,
+      "description": "Uber",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 157,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-05-05T11:59:35.356000+00:00",
+      "amount": -42.99,
+      "description": "Brunch Spot",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 158,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-05-04T23:51:17.983000+00:00",
+      "amount": -0.85,
+      "description": "Uber",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 159,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-05-04T23:42:30.105000+00:00",
+      "amount": -3.25,
+      "description": "Uber",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 160,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-05-04T16:38:36.568000+00:00",
+      "amount": -22.1,
+      "description": "Uber",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 161,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-05-04T16:38:29.362000+00:00",
+      "amount": 19.57,
+      "description": "Uber",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 162,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-05-04T16:03:41.466000+00:00",
+      "amount": -52.25,
+      "description": "Tasty Fish Co.",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 163,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-05-04T11:16:13.417000+00:00",
+      "amount": -19.52,
+      "description": "Low Price",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 164,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-05-03T19:03:09.845000+00:00",
+      "amount": -14.32,
+      "description": "Krispy Kreme",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 165,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-05-03T18:23:12.979000+00:00",
+      "amount": -27.61,
+      "description": "John Lewis",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 166,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-05-03T16:56:14.727000+00:00",
+      "amount": -44.5,
+      "description": "John Lewis",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 167,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-05-03T16:27:58.462000+00:00",
+      "amount": -13.17,
+      "description": "John Lewis",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 168,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-05-03T10:58:07.803000+00:00",
+      "amount": -114.7,
+      "description": "Boat Cruise",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 169,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-05-02T20:37:53.913000+00:00",
+      "amount": -39.35,
+      "description": "Uber Eats",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 170,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-05-02T16:35:40.524000+00:00",
+      "amount": -6.49,
+      "description": "Gelato",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 171,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-05-01T20:14:03.360000+00:00",
+      "amount": -241.08,
+      "description": "Caff\u00e8 Nero",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 172,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-05-01T13:35:00.461000+00:00",
+      "amount": -25.59,
+      "description": "Taco Town",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 173,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-05-01T11:51:02.389000+00:00",
+      "amount": -10.24,
+      "description": "Museum Shop",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 174,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-04-30T22:22:10.471000+00:00",
+      "amount": -65.94,
+      "description": "Tasty Fish Co.",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 175,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-04-30T19:24:04.787000+00:00",
+      "amount": -56.28,
+      "description": "Restaurant",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 176,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-04-30T15:23:20.560000+00:00",
+      "amount": -6.65,
+      "description": "Gelato",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 177,
+    "fields": {
+      "account": 1,
+      "timestamp": "2022-04-30T13:50:43.005000+00:00",
+      "amount": -29.43,
+      "description": "Restaurant",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 178,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-06-13T20:53:00.904000+00:00",
+      "amount": -12.55,
+      "description": "Gelato",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 179,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-06-13T16:53:03.205000+00:00",
+      "amount": -4.22,
+      "description": "Pret",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 180,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-06-13T14:07:10.746000+00:00",
+      "amount": -45.12,
+      "description": "Tesco",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 181,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-06-13T07:44:44.555000+00:00",
+      "amount": 0.04,
+      "description": "Uber",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 182,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-06-13T02:46:14.312000+00:00",
+      "amount": 8.17,
+      "description": "Uber",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 183,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-06-13T02:45:02.888000+00:00",
+      "amount": -8.6,
+      "description": "Uber",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 184,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-06-12T23:48:38.658000+00:00",
+      "amount": -4.27,
+      "description": "Wine Bar",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 185,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-06-12T23:02:15.077000+00:00",
+      "amount": -24.31,
+      "description": "Restaurant",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 186,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-06-12T18:22:30.260000+00:00",
+      "amount": -0.43,
+      "description": "Uber",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 187,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-06-12T18:22:21.630000+00:00",
+      "amount": -0.43,
+      "description": "Uber",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 188,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-06-12T18:22:13.408000+00:00",
+      "amount": -0.43,
+      "description": "Uber",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 189,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-06-12T18:10:28.741000+00:00",
+      "amount": -5.17,
+      "description": "Coffee Shop",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 190,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-06-12T17:47:38.523000+00:00",
+      "amount": -2.96,
+      "description": "Uber",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 191,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-06-11T17:19:37.987000+00:00",
+      "amount": -10.24,
+      "description": "Tesco",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 192,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-06-11T15:24:28.209000+00:00",
+      "amount": -8.57,
+      "description": "Brunch Spot",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 193,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-06-10T12:09:50.802000+00:00",
+      "amount": -21.33,
+      "description": "Brunch Spot",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 194,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-06-09T21:07:54.667000+00:00",
+      "amount": -21.18,
+      "description": "Uber Eats",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 195,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-06-09T17:22:17.218000+00:00",
+      "amount": -3.85,
+      "description": "GAIL's Bakery",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 196,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-06-09T17:18:33.028000+00:00",
+      "amount": -3.26,
+      "description": "GitHub",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 197,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-06-09T13:37:02.739000+00:00",
+      "amount": -23.86,
+      "description": "Brunch Spot",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 198,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-06-09T00:17:33.098000+00:00",
+      "amount": 6.12,
+      "description": "GAIL's Bakery",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 199,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-06-08T17:28:22.843000+00:00",
+      "amount": -26.9,
+      "description": "Tesco",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 200,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-06-08T11:44:31.130000+00:00",
+      "amount": -26.66,
+      "description": "Brunch Spot",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 201,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-06-06T22:26:11.010000+00:00",
+      "amount": -4.47,
+      "description": "Uber",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 202,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-06-06T10:38:20.241000+00:00",
+      "amount": -19.08,
+      "description": "Happy Sandwich",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 203,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-06-05T20:46:59.130000+00:00",
+      "amount": -39.53,
+      "description": "Lebanese",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 204,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-06-05T13:21:53.346000+00:00",
+      "amount": -15.72,
+      "description": "Local Coffee Spot",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 205,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-06-05T13:14:35.356000+00:00",
+      "amount": -23.03,
+      "description": "Brunch Spot",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 206,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-06-05T01:10:53.549000+00:00",
+      "amount": -23.44,
+      "description": "Destroy All Software",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 207,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-06-04T17:36:06.781000+00:00",
+      "amount": -13.23,
+      "description": "Tesco",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 208,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-06-04T15:54:57.374000+00:00",
+      "amount": -2.75,
+      "description": "Uber",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 209,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-06-04T15:49:40.493000+00:00",
+      "amount": -2.49,
+      "description": "Apple",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 210,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-06-04T12:02:35.591000+00:00",
+      "amount": -23.52,
+      "description": "Brunch Spot",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 211,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-06-04T02:00:59.647000+00:00",
+      "amount": -36.2,
+      "description": "Vodafone",
+      "transaction_category": "DEBIT"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 212,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-06-03T22:23:24.859000+00:00",
+      "amount": -5.49,
+      "description": "Uber",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 213,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-06-03T21:00:57.154000+00:00",
+      "amount": -4.23,
+      "description": "Brunch Spot",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 214,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-06-03T20:12:35.721000+00:00",
+      "amount": -4.23,
+      "description": "Brunch Spot",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 215,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-06-03T19:10:38.057000+00:00",
+      "amount": -4.23,
+      "description": "Brunch Spot",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 216,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-06-03T18:46:28.868000+00:00",
+      "amount": -3.81,
+      "description": "Uber",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 217,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-06-03T17:09:52.506000+00:00",
+      "amount": -27.82,
+      "description": "Tesco",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 218,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-06-03T12:20:51.285000+00:00",
+      "amount": -5.98,
+      "description": "Local Coffee Spot",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 219,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-06-03T11:35:54.129000+00:00",
+      "amount": -22.8,
+      "description": "Brunch Spot",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 220,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-06-02T21:04:58.879000+00:00",
+      "amount": -53.34,
+      "description": "Little French Restaurant",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 221,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-06-01T19:11:31.998000+00:00",
+      "amount": -53.61,
+      "description": "Sainsburys",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 222,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-06-01T16:32:52.815000+00:00",
+      "amount": -80.41,
+      "description": "Kickstarter",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 223,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-06-01T13:12:38.503000+00:00",
+      "amount": -22.85,
+      "description": "Brunch Spot",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 224,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-06-01T10:14:57.696000+00:00",
+      "amount": -11.99,
+      "description": "Local Coffee Spot",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 225,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-05-31T20:11:13.191000+00:00",
+      "amount": -22.8,
+      "description": "Hotel Bar",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 226,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-05-31T20:10:36.862000+00:00",
+      "amount": -2.53,
+      "description": "Hotel Bar",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 227,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-05-31T16:41:28.736000+00:00",
+      "amount": -4.23,
+      "description": "Uber",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 228,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-05-31T15:57:57.607000+00:00",
+      "amount": -4.98,
+      "description": "Krispy Kreme",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 229,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-05-31T15:42:27.733000+00:00",
+      "amount": -4.68,
+      "description": "Patreon",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 230,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-05-31T15:40:29.740000+00:00",
+      "amount": -48.14,
+      "description": "Steakhouse",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 231,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-05-31T13:21:53.778000+00:00",
+      "amount": -27.87,
+      "description": "Zara",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 232,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-05-31T12:19:50.204000+00:00",
+      "amount": -2.7,
+      "description": "Pret",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 233,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-05-31T10:43:39.619000+00:00",
+      "amount": -4.82,
+      "description": "Digital Ocean",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 234,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-05-30T17:36:43.322000+00:00",
+      "amount": -6.76,
+      "description": "Niva",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 235,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-05-30T14:37:28.422000+00:00",
+      "amount": -40.69,
+      "description": "Tasty Fish Co.",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 236,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-05-29T20:32:02.958000+00:00",
+      "amount": -23.91,
+      "description": "Uber Eats",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 237,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-05-29T09:38:15.431000+00:00",
+      "amount": -1000.0,
+      "description": "pispXXXXXXXXX",
+      "transaction_category": "TRANSFER"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 238,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-05-28T12:09:44.154000+00:00",
+      "amount": -11.09,
+      "description": "Local Coffee Spot",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 239,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-05-28T11:04:34.303000+00:00",
+      "amount": -7.99,
+      "description": "YouTube Premium",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 240,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-05-27T18:29:48.806000+00:00",
+      "amount": -35.57,
+      "description": "Uber Eats",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 241,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-05-27T14:10:31.841000+00:00",
+      "amount": -10.99,
+      "description": "Brunch Spot",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 242,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-05-25T10:54:52.277000+00:00",
+      "amount": 2400.0,
+      "description": "Payroll",
+      "transaction_category": "TRANSFER"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 243,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-05-25T08:53:27.028000+00:00",
+      "amount": -1000.0,
+      "description": "pispXXXXXXXXX",
+      "transaction_category": "TRANSFER"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 244,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-05-24T20:00:14.385000+00:00",
+      "amount": -41.22,
+      "description": "Hotel Bar",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 245,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-05-24T10:29:15.586000+00:00",
+      "amount": -25.72,
+      "description": "Tesco",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 246,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-05-24T09:50:29.405000+00:00",
+      "amount": -14.05,
+      "description": "Local Coffee Spot",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 247,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-05-22T18:19:48.576000+00:00",
+      "amount": -5.15,
+      "description": "Pret",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 248,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-05-22T13:38:58.171000+00:00",
+      "amount": -5.94,
+      "description": "Local Coffee Spot",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 249,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-05-21T11:51:40.115000+00:00",
+      "amount": -9.34,
+      "description": "Local Coffee Spot",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 250,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-05-21T11:32:54.371000+00:00",
+      "amount": -21.76,
+      "description": "Park Cafe",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 251,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-05-20T21:01:03.567000+00:00",
+      "amount": -8.75,
+      "description": "Board Game Cafe",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 252,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-05-20T19:55:57.520000+00:00",
+      "amount": -4.59,
+      "description": "Board Game Cafe",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 253,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-05-20T18:40:19.792000+00:00",
+      "amount": -2.7,
+      "description": "Uber",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 254,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-05-20T18:40:13.519000+00:00",
+      "amount": 2.7,
+      "description": "Uber",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 255,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-05-20T10:31:36.006000+00:00",
+      "amount": -20.8,
+      "description": "Tesco",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 256,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-05-19T18:00:42.356000+00:00",
+      "amount": -20.12,
+      "description": "GAIL's Bakery",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 257,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-05-19T09:07:45.273000+00:00",
+      "amount": -0.01,
+      "description": "Uber",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 258,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-05-18T15:50:12.853000+00:00",
+      "amount": -0.83,
+      "description": "Uber",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 259,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-05-18T15:32:47.637000+00:00",
+      "amount": -2.69,
+      "description": "Uber",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 260,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-05-18T09:38:32.438000+00:00",
+      "amount": -6.8,
+      "description": "Local Coffee Spot",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 261,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-05-18T09:33:32.841000+00:00",
+      "amount": -37.29,
+      "description": "Tesco",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 262,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-05-15T12:35:16.163000+00:00",
+      "amount": -29.46,
+      "description": "Happy Sandwich",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 263,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-05-14T20:06:44.255000+00:00",
+      "amount": -130.44,
+      "description": "Kickstarter",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 264,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-05-14T14:17:43.204000+00:00",
+      "amount": -10.43,
+      "description": "Brunch Spot",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 265,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-05-13T14:17:11.160000+00:00",
+      "amount": -8.2,
+      "description": "Local Coffee Spot",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 266,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-05-13T14:14:05.666000+00:00",
+      "amount": -3.34,
+      "description": "Tesco",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 267,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-05-13T12:13:35.244000+00:00",
+      "amount": -26.31,
+      "description": "Brunch Spot",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 268,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-05-12T12:05:32.662000+00:00",
+      "amount": -22.89,
+      "description": "Brunch Spot",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 269,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-05-11T19:04:57.180000+00:00",
+      "amount": -53.57,
+      "description": "Sainsburys",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 270,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-05-11T13:32:39.530000+00:00",
+      "amount": -8.87,
+      "description": "Caff\u00e8 Nero",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 271,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-05-11T10:33:18.132000+00:00",
+      "amount": -16.98,
+      "description": "Uber Eats",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 272,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-05-11T01:02:03.163000+00:00",
+      "amount": 16.98,
+      "description": "Uber Eats",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 273,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-05-10T20:27:41.201000+00:00",
+      "amount": -1.7,
+      "description": "Uber Eats",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 274,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-05-10T18:50:37.513000+00:00",
+      "amount": -16.98,
+      "description": "Uber Eats",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 275,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-05-10T17:22:02.671000+00:00",
+      "amount": -3.08,
+      "description": "GitHub",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 276,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-05-10T14:28:39.625000+00:00",
+      "amount": -8.21,
+      "description": "Tesco",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 277,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-05-10T13:35:31.158000+00:00",
+      "amount": -44.2,
+      "description": "Sainsburys",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 278,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-05-10T12:07:26.385000+00:00",
+      "amount": -12.82,
+      "description": "Tesco",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 279,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-05-09T21:09:16.285000+00:00",
+      "amount": -1.62,
+      "description": "Uber Eats",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 280,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-05-09T19:45:52.359000+00:00",
+      "amount": -16.22,
+      "description": "Uber Eats",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 281,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-05-08T15:09:48.371000+00:00",
+      "amount": -5.62,
+      "description": "GAIL's Bakery",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 282,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-05-08T13:50:04.566000+00:00",
+      "amount": -5.83,
+      "description": "Tesco",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 283,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-05-07T12:14:11.675000+00:00",
+      "amount": -5.01,
+      "description": "Local Coffee Spot",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 284,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-05-07T12:04:09.333000+00:00",
+      "amount": -29.32,
+      "description": "Brunch Spot",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 285,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-05-07T10:23:43.171000+00:00",
+      "amount": -77.99,
+      "description": "Apple",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 286,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-05-07T07:42:15.655000+00:00",
+      "amount": -0.01,
+      "description": "Uber",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 287,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-05-06T22:30:09.278000+00:00",
+      "amount": -1.67,
+      "description": "Uber",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 288,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-05-06T22:04:56.858000+00:00",
+      "amount": -4.34,
+      "description": "Uber",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 289,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-05-06T21:33:03.570000+00:00",
+      "amount": -4.18,
+      "description": "Brunch Spot",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 290,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-05-06T20:12:02.552000+00:00",
+      "amount": -2.09,
+      "description": "Brunch Spot",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 291,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-05-06T19:15:03.574000+00:00",
+      "amount": -4.18,
+      "description": "Brunch Spot",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 292,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-05-06T18:48:14.583000+00:00",
+      "amount": -3.55,
+      "description": "Uber",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 293,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-05-06T01:05:32.914000+00:00",
+      "amount": -22.15,
+      "description": "Destroy All Software",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 294,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-05-05T15:48:11.200000+00:00",
+      "amount": -2.49,
+      "description": "Apple",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 295,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-05-05T11:51:29.182000+00:00",
+      "amount": -8.18,
+      "description": "Caff\u00e8 Nero",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 296,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-05-05T11:20:38.762000+00:00",
+      "amount": -21.84,
+      "description": "Park Cafe",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 297,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-05-04T17:28:38.302000+00:00",
+      "amount": -48.34,
+      "description": "Tesco",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 298,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-05-04T14:17:46.696000+00:00",
+      "amount": -10.55,
+      "description": "Brunch Spot",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 299,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-05-04T02:00:55.936000+00:00",
+      "amount": -33.46,
+      "description": "Vodafone",
+      "transaction_category": "DEBIT"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 300,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-05-04T00:25:33.319000+00:00",
+      "amount": 0.76,
+      "description": "Amazon Web Services",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 301,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-05-03T14:52:50.714000+00:00",
+      "amount": -7.42,
+      "description": "Uber",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 302,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-05-02T18:56:34.454000+00:00",
+      "amount": -34.12,
+      "description": "Sainsburys",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 303,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-05-02T18:26:06.820000+00:00",
+      "amount": -18.92,
+      "description": "GAIL's Bakery",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 304,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-05-01T19:42:16.810000+00:00",
+      "amount": -4.68,
+      "description": "Patreon",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 305,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-05-01T12:41:00.337000+00:00",
+      "amount": -4.58,
+      "description": "Digital Ocean",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 306,
+    "fields": {
+      "account": 2,
+      "timestamp": "2022-05-01T12:09:56.606000+00:00",
+      "amount": -24.52,
+      "description": "Park Cafe",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 307,
+    "fields": {
+      "account": 3,
+      "timestamp": "2022-06-14T12:23:09.035000+00:00",
+      "amount": -16.82,
+      "description": "Brunch Spot",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 308,
+    "fields": {
+      "account": 3,
+      "timestamp": "2022-06-13T14:12:56.761000+00:00",
+      "amount": -4.15,
+      "description": "Local Coffee Spot",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 309,
+    "fields": {
+      "account": 3,
+      "timestamp": "2022-06-13T12:12:39.828000+00:00",
+      "amount": -16.79,
+      "description": "Brunch Spot",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 310,
+    "fields": {
+      "account": 3,
+      "timestamp": "2022-06-13T10:57:23.328000+00:00",
+      "amount": 0.01,
+      "description": "Uber",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 311,
+    "fields": {
+      "account": 3,
+      "timestamp": "2022-06-12T20:38:18.118000+00:00",
+      "amount": -54.68,
+      "description": "Vegetarian Restaurant",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 312,
+    "fields": {
+      "account": 3,
+      "timestamp": "2022-06-12T19:52:52.578000+00:00",
+      "amount": -0.85,
+      "description": "Uber",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 313,
+    "fields": {
+      "account": 3,
+      "timestamp": "2022-06-12T19:34:53.682000+00:00",
+      "amount": -2.76,
+      "description": "Uber",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 314,
+    "fields": {
+      "account": 3,
+      "timestamp": "2022-06-12T14:37:19.562000+00:00",
+      "amount": -61.96,
+      "description": "Sainsburys",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 315,
+    "fields": {
+      "account": 3,
+      "timestamp": "2022-06-12T14:06:52.828000+00:00",
+      "amount": -3.46,
+      "description": "GAIL's Bakery",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 316,
+    "fields": {
+      "account": 3,
+      "timestamp": "2022-06-12T13:35:24.003000+00:00",
+      "amount": -16.96,
+      "description": "Park Cafe",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 317,
+    "fields": {
+      "account": 3,
+      "timestamp": "2022-06-12T13:26:45.476000+00:00",
+      "amount": -3.68,
+      "description": "Tesco",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 318,
+    "fields": {
+      "account": 3,
+      "timestamp": "2022-06-12T10:53:27.196000+00:00",
+      "amount": -10.08,
+      "description": "Brunch Spot",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 319,
+    "fields": {
+      "account": 3,
+      "timestamp": "2022-06-11T11:51:24.770000+00:00",
+      "amount": -16.58,
+      "description": "Brunch Spot",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 320,
+    "fields": {
+      "account": 3,
+      "timestamp": "2022-06-11T11:40:49.022000+00:00",
+      "amount": -32.56,
+      "description": "Tesco",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 321,
+    "fields": {
+      "account": 3,
+      "timestamp": "2022-06-11T11:04:34.696000+00:00",
+      "amount": -7.99,
+      "description": "YouTube Premium",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 322,
+    "fields": {
+      "account": 3,
+      "timestamp": "2022-06-10T15:31:25.668000+00:00",
+      "amount": -20.34,
+      "description": "Shake Shack",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 323,
+    "fields": {
+      "account": 3,
+      "timestamp": "2022-06-08T20:36:39.473000+00:00",
+      "amount": -1.58,
+      "description": "Uber Eats",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 324,
+    "fields": {
+      "account": 3,
+      "timestamp": "2022-06-08T19:12:14.530000+00:00",
+      "amount": -13.48,
+      "description": "Uber Eats",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 325,
+    "fields": {
+      "account": 3,
+      "timestamp": "2022-06-08T17:22:45.316000+00:00",
+      "amount": 2400.0,
+      "description": "Payroll",
+      "transaction_category": "TRANSFER"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 326,
+    "fields": {
+      "account": 3,
+      "timestamp": "2022-06-08T14:50:11.375000+00:00",
+      "amount": -16.87,
+      "description": "Brunch Spot",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 327,
+    "fields": {
+      "account": 3,
+      "timestamp": "2022-06-08T10:35:07.300000+00:00",
+      "amount": -1000.0,
+      "description": "pispXXXXXXXXX",
+      "transaction_category": "TRANSFER"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 328,
+    "fields": {
+      "account": 3,
+      "timestamp": "2022-06-07T20:49:23.266000+00:00",
+      "amount": -13.2,
+      "description": "Uber Eats",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 329,
+    "fields": {
+      "account": 3,
+      "timestamp": "2022-06-07T18:20:06.677000+00:00",
+      "amount": -5.32,
+      "description": "Tesco",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 330,
+    "fields": {
+      "account": 3,
+      "timestamp": "2022-06-07T16:30:35.200000+00:00",
+      "amount": -100.07,
+      "description": "Kickstarter",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 331,
+    "fields": {
+      "account": 3,
+      "timestamp": "2022-06-06T21:26:30.300000+00:00",
+      "amount": -4.59,
+      "description": "Board Game Cafe",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 332,
+    "fields": {
+      "account": 3,
+      "timestamp": "2022-06-06T20:25:52.823000+00:00",
+      "amount": -4.75,
+      "description": "Board Game Cafe",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 333,
+    "fields": {
+      "account": 3,
+      "timestamp": "2022-06-06T19:42:18.724000+00:00",
+      "amount": -5.0,
+      "description": "Board Game Cafe",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 334,
+    "fields": {
+      "account": 3,
+      "timestamp": "2022-06-06T19:22:34.682000+00:00",
+      "amount": -3.79,
+      "description": "Uber",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 335,
+    "fields": {
+      "account": 3,
+      "timestamp": "2022-06-06T15:11:22.889000+00:00",
+      "amount": -15.08,
+      "description": "Brunch Spot",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 336,
+    "fields": {
+      "account": 3,
+      "timestamp": "2022-06-05T13:43:13.603000+00:00",
+      "amount": -6.9,
+      "description": "Local Coffee Spot",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 337,
+    "fields": {
+      "account": 3,
+      "timestamp": "2022-06-05T06:38:07.197000+00:00",
+      "amount": 0.02,
+      "description": "Uber",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 338,
+    "fields": {
+      "account": 3,
+      "timestamp": "2022-06-04T20:47:12.671000+00:00",
+      "amount": -0.07,
+      "description": "Uber",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 339,
+    "fields": {
+      "account": 3,
+      "timestamp": "2022-06-04T18:16:15.821000+00:00",
+      "amount": -4.06,
+      "description": "Boots",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 340,
+    "fields": {
+      "account": 3,
+      "timestamp": "2022-06-04T16:19:50.907000+00:00",
+      "amount": -139.1,
+      "description": "Free League Publi",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 341,
+    "fields": {
+      "account": 3,
+      "timestamp": "2022-06-04T09:47:00.552000+00:00",
+      "amount": -2.75,
+      "description": "Uber",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 342,
+    "fields": {
+      "account": 3,
+      "timestamp": "2022-06-04T09:45:36.745000+00:00",
+      "amount": -47.04,
+      "description": "Sainsburys",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 343,
+    "fields": {
+      "account": 3,
+      "timestamp": "2022-06-04T09:23:43.384000+00:00",
+      "amount": -5.18,
+      "description": "GAIL's Bakery",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 344,
+    "fields": {
+      "account": 3,
+      "timestamp": "2022-06-04T08:49:46.064000+00:00",
+      "amount": -11.08,
+      "description": "Caff\u00e8 Nero",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 345,
+    "fields": {
+      "account": 3,
+      "timestamp": "2022-06-03T19:08:37.555000+00:00",
+      "amount": -34.31,
+      "description": "Tesco",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 346,
+    "fields": {
+      "account": 3,
+      "timestamp": "2022-06-02T18:32:01.118000+00:00",
+      "amount": -13.99,
+      "description": "Google Play",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 347,
+    "fields": {
+      "account": 3,
+      "timestamp": "2022-06-01T15:04:02.682000+00:00",
+      "amount": -9.13,
+      "description": "Brunch Spot",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 348,
+    "fields": {
+      "account": 3,
+      "timestamp": "2022-06-01T14:33:22.841000+00:00",
+      "amount": -13.57,
+      "description": "Tesco",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 349,
+    "fields": {
+      "account": 3,
+      "timestamp": "2022-06-01T10:53:34.716000+00:00",
+      "amount": 3.38,
+      "description": "Uber Eats",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 350,
+    "fields": {
+      "account": 3,
+      "timestamp": "2022-05-31T14:53:05.168000+00:00",
+      "amount": -10.54,
+      "description": "Brunch Spot",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 351,
+    "fields": {
+      "account": 3,
+      "timestamp": "2022-05-31T13:09:27.858000+00:00",
+      "amount": -7.4,
+      "description": "Tesco",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 352,
+    "fields": {
+      "account": 3,
+      "timestamp": "2022-05-30T19:39:37.941000+00:00",
+      "amount": -1.8,
+      "description": "Uber Eats",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 353,
+    "fields": {
+      "account": 3,
+      "timestamp": "2022-05-30T18:26:12.592000+00:00",
+      "amount": -18.1,
+      "description": "Uber Eats",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 354,
+    "fields": {
+      "account": 3,
+      "timestamp": "2022-05-30T14:39:14.302000+00:00",
+      "amount": -15.14,
+      "description": "Brunch Spot",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 355,
+    "fields": {
+      "account": 3,
+      "timestamp": "2022-05-29T14:36:06.076000+00:00",
+      "amount": -15.17,
+      "description": "Brunch Spot",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 356,
+    "fields": {
+      "account": 3,
+      "timestamp": "2022-05-27T17:54:14.824000+00:00",
+      "amount": -49.74,
+      "description": "Sainsburys",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 357,
+    "fields": {
+      "account": 3,
+      "timestamp": "2022-05-27T13:12:28.631000+00:00",
+      "amount": -62.27,
+      "description": "ATM",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 358,
+    "fields": {
+      "account": 3,
+      "timestamp": "2022-05-26T16:13:44.471000+00:00",
+      "amount": -63.99,
+      "description": "Aquarium",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 359,
+    "fields": {
+      "account": 3,
+      "timestamp": "2022-05-25T14:09:26.237000+00:00",
+      "amount": -15.83,
+      "description": "Nintendo",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 360,
+    "fields": {
+      "account": 3,
+      "timestamp": "2022-05-24T18:18:23.703000+00:00",
+      "amount": -3.06,
+      "description": "GitHub",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 361,
+    "fields": {
+      "account": 3,
+      "timestamp": "2022-05-24T15:46:00.341000+00:00",
+      "amount": -5.66,
+      "description": "GAIL's Bakery",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 362,
+    "fields": {
+      "account": 3,
+      "timestamp": "2022-05-24T15:34:58.315000+00:00",
+      "amount": -48.22,
+      "description": "Sainsburys",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 363,
+    "fields": {
+      "account": 3,
+      "timestamp": "2022-05-23T21:43:33.042000+00:00",
+      "amount": -5.05,
+      "description": "Board Game Cafe",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 364,
+    "fields": {
+      "account": 3,
+      "timestamp": "2022-05-23T20:41:46.671000+00:00",
+      "amount": -2.95,
+      "description": "Board Game Cafe",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 365,
+    "fields": {
+      "account": 3,
+      "timestamp": "2022-05-23T19:18:31.124000+00:00",
+      "amount": -2.63,
+      "description": "Uber",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 366,
+    "fields": {
+      "account": 3,
+      "timestamp": "2022-05-22T21:24:11.608000+00:00",
+      "amount": -1.91,
+      "description": "Uber Eats",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 367,
+    "fields": {
+      "account": 3,
+      "timestamp": "2022-05-22T20:03:06.008000+00:00",
+      "amount": -18.98,
+      "description": "Uber Eats",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 368,
+    "fields": {
+      "account": 3,
+      "timestamp": "2022-05-22T15:19:34.173000+00:00",
+      "amount": -16.74,
+      "description": "Local Coffee Spot",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 369,
+    "fields": {
+      "account": 3,
+      "timestamp": "2022-05-22T10:14:20.553000+00:00",
+      "amount": -26.69,
+      "description": "Uber Eats",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 370,
+    "fields": {
+      "account": 3,
+      "timestamp": "2022-05-22T04:14:22.137000+00:00",
+      "amount": 26.69,
+      "description": "Uber Eats",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 371,
+    "fields": {
+      "account": 3,
+      "timestamp": "2022-05-21T22:53:51.940000+00:00",
+      "amount": -2.67,
+      "description": "Uber Eats",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 372,
+    "fields": {
+      "account": 3,
+      "timestamp": "2022-05-21T21:03:46.756000+00:00",
+      "amount": -26.69,
+      "description": "Uber Eats",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 373,
+    "fields": {
+      "account": 3,
+      "timestamp": "2022-05-21T20:52:39.181000+00:00",
+      "amount": -239.71,
+      "description": "Zatu Games",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 374,
+    "fields": {
+      "account": 3,
+      "timestamp": "2022-05-21T14:54:08.346000+00:00",
+      "amount": -6.8,
+      "description": "Local Coffee Spot",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 375,
+    "fields": {
+      "account": 3,
+      "timestamp": "2022-05-21T03:00:33.832000+00:00",
+      "amount": -33.46,
+      "description": "Vodafone",
+      "transaction_category": "DEBIT"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 376,
+    "fields": {
+      "account": 3,
+      "timestamp": "2022-05-20T23:16:18.188000+00:00",
+      "amount": -267.17,
+      "description": "Fine Dining",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 377,
+    "fields": {
+      "account": 3,
+      "timestamp": "2022-05-20T01:02:56.991000+00:00",
+      "amount": -21.97,
+      "description": "Destroy All Software",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 378,
+    "fields": {
+      "account": 3,
+      "timestamp": "2022-05-19T16:48:05.888000+00:00",
+      "amount": -2.49,
+      "description": "Apple",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 379,
+    "fields": {
+      "account": 3,
+      "timestamp": "2022-05-17T19:17:30.246000+00:00",
+      "amount": -3.45,
+      "description": "GAIL's Bakery",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 380,
+    "fields": {
+      "account": 3,
+      "timestamp": "2022-05-17T19:10:44.933000+00:00",
+      "amount": -127.94,
+      "description": "Kickstarter",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 381,
+    "fields": {
+      "account": 3,
+      "timestamp": "2022-05-17T19:08:04.357000+00:00",
+      "amount": -38.49,
+      "description": "Sainsburys",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 382,
+    "fields": {
+      "account": 3,
+      "timestamp": "2022-05-16T20:13:18.610000+00:00",
+      "amount": -19.61,
+      "description": "Tesco",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 383,
+    "fields": {
+      "account": 3,
+      "timestamp": "2022-05-15T21:15:48.940000+00:00",
+      "amount": -31.56,
+      "description": "Restaurant",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 384,
+    "fields": {
+      "account": 3,
+      "timestamp": "2022-05-15T16:35:40.050000+00:00",
+      "amount": -4.64,
+      "description": "Patreon",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 385,
+    "fields": {
+      "account": 3,
+      "timestamp": "2022-05-15T15:21:14.173000+00:00",
+      "amount": -8.04,
+      "description": "Caff\u00e8 Nero",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 386,
+    "fields": {
+      "account": 3,
+      "timestamp": "2022-05-15T07:00:18.253000+00:00",
+      "amount": -4.51,
+      "description": "Digital Ocean",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 387,
+    "fields": {
+      "account": 3,
+      "timestamp": "2022-05-14T11:04:34.328000+00:00",
+      "amount": -7.99,
+      "description": "YouTube Premium",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 388,
+    "fields": {
+      "account": 3,
+      "timestamp": "2022-05-13T18:49:30.066000+00:00",
+      "amount": -31.72,
+      "description": "Tesco",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 389,
+    "fields": {
+      "account": 3,
+      "timestamp": "2022-05-13T17:16:25.680000+00:00",
+      "amount": -27.32,
+      "description": "Adidas",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 390,
+    "fields": {
+      "account": 3,
+      "timestamp": "2022-05-13T15:53:03.243000+00:00",
+      "amount": -3.25,
+      "description": "Tesco",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 391,
+    "fields": {
+      "account": 3,
+      "timestamp": "2022-05-13T14:57:16.639000+00:00",
+      "amount": -2.51,
+      "description": "Pret",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 392,
+    "fields": {
+      "account": 3,
+      "timestamp": "2022-05-13T14:56:49.940000+00:00",
+      "amount": -12.57,
+      "description": "Pret",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 393,
+    "fields": {
+      "account": 3,
+      "timestamp": "2022-05-11T22:59:59.015000+00:00",
+      "amount": -124.85,
+      "description": "Restaurant",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 394,
+    "fields": {
+      "account": 3,
+      "timestamp": "2022-05-11T14:28:46.179000+00:00",
+      "amount": 2400.0,
+      "description": "Payroll",
+      "transaction_category": "TRANSFER"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 395,
+    "fields": {
+      "account": 3,
+      "timestamp": "2022-05-10T22:17:35.090000+00:00",
+      "amount": -1.63,
+      "description": "Uber Eats",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 396,
+    "fields": {
+      "account": 3,
+      "timestamp": "2022-05-10T20:30:09.543000+00:00",
+      "amount": -16.26,
+      "description": "Uber Eats",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 397,
+    "fields": {
+      "account": 3,
+      "timestamp": "2022-05-10T10:13:22.408000+00:00",
+      "amount": -19.23,
+      "description": "Tesco",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 398,
+    "fields": {
+      "account": 3,
+      "timestamp": "2022-05-10T00:33:37.905000+00:00",
+      "amount": -2.98,
+      "description": "Uber Eats",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 399,
+    "fields": {
+      "account": 3,
+      "timestamp": "2022-05-09T23:12:46.795000+00:00",
+      "amount": -16.54,
+      "description": "Uber Eats",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 400,
+    "fields": {
+      "account": 3,
+      "timestamp": "2022-05-09T19:28:15.006000+00:00",
+      "amount": -41.92,
+      "description": "ATM",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 401,
+    "fields": {
+      "account": 3,
+      "timestamp": "2022-05-09T13:11:28.151000+00:00",
+      "amount": -10.98,
+      "description": "Caff\u00e8 Nero",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 402,
+    "fields": {
+      "account": 3,
+      "timestamp": "2022-05-07T17:04:57.416000+00:00",
+      "amount": -79.0,
+      "description": "Amazon Prime",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 403,
+    "fields": {
+      "account": 3,
+      "timestamp": "2022-05-07T15:50:53.768000+00:00",
+      "amount": -3.44,
+      "description": "GAIL's Bakery",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 404,
+    "fields": {
+      "account": 3,
+      "timestamp": "2022-05-07T15:40:23.276000+00:00",
+      "amount": -14.33,
+      "description": "Sainsburys",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 405,
+    "fields": {
+      "account": 3,
+      "timestamp": "2022-05-07T14:48:41.982000+00:00",
+      "amount": -10.45,
+      "description": "Brunch Spot",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 406,
+    "fields": {
+      "account": 3,
+      "timestamp": "2022-05-06T16:15:52.536000+00:00",
+      "amount": -7.44,
+      "description": "Caff\u00e8 Nero",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 407,
+    "fields": {
+      "account": 3,
+      "timestamp": "2022-05-05T23:55:01.693000+00:00",
+      "amount": -24.99,
+      "description": "Steam",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 408,
+    "fields": {
+      "account": 3,
+      "timestamp": "2022-05-05T15:04:18.735000+00:00",
+      "amount": -3.43,
+      "description": "Local Coffee Spot",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 409,
+    "fields": {
+      "account": 3,
+      "timestamp": "2022-05-05T14:48:39.018000+00:00",
+      "amount": -5.52,
+      "description": "Caff\u00e8 Nero",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 410,
+    "fields": {
+      "account": 3,
+      "timestamp": "2022-05-05T14:27:53.114000+00:00",
+      "amount": -12.54,
+      "description": "Pret",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 411,
+    "fields": {
+      "account": 3,
+      "timestamp": "2022-05-05T10:54:54.914000+00:00",
+      "amount": 0.02,
+      "description": "Uber",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 412,
+    "fields": {
+      "account": 3,
+      "timestamp": "2022-05-04T20:00:52.285000+00:00",
+      "amount": -1.68,
+      "description": "Uber",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 413,
+    "fields": {
+      "account": 3,
+      "timestamp": "2022-05-04T19:42:24.872000+00:00",
+      "amount": -2.45,
+      "description": "Uber",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 414,
+    "fields": {
+      "account": 3,
+      "timestamp": "2022-05-04T14:14:15.107000+00:00",
+      "amount": -8.05,
+      "description": "Brunch Spot",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 415,
+    "fields": {
+      "account": 3,
+      "timestamp": "2022-05-04T13:55:54.010000+00:00",
+      "amount": -4.15,
+      "description": "Pret",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 416,
+    "fields": {
+      "account": 3,
+      "timestamp": "2022-05-04T10:52:43.586000+00:00",
+      "amount": -4.18,
+      "description": "Tesco",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 417,
+    "fields": {
+      "account": 3,
+      "timestamp": "2022-05-02T13:01:54.117000+00:00",
+      "amount": -9.87,
+      "description": "Pret",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 418,
+    "fields": {
+      "account": 3,
+      "timestamp": "2022-05-02T12:59:28.942000+00:00",
+      "amount": -27.85,
+      "description": "Tesco",
+      "transaction_category": "PURCHASE"
+    }
+  },
+  {
+    "model": "accounts.transaction",
+    "pk": 419,
+    "fields": {
+      "account": 3,
+      "timestamp": "2022-05-01T14:48:50.117000+00:00",
+      "amount": -3.46,
+      "description": "GAIL's Bakery",
+      "transaction_category": "PURCHASE"
+    }
+  }
+]
